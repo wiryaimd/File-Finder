@@ -4,7 +4,7 @@ Online file finder using google dork - Download &amp; Copy Link (Android App)
 
 **How it Works**
 - Using dork google 
-  ```{keyword} inurl:(htm|html|php|pls|txt) intitle:index.of “last modified” ({file})```
+  ```{keyword} inurl:(htm|html|php|pls|txt) intitle:index.of “last modified” ({extension})```
 
 **Depedency**
 - ```implementation 'androidx.recyclerview:recyclerview:1.1.0'```
