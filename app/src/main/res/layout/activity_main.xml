@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient1"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/main_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/sfbold"
+            android:text="Direct Download V1.0"
+            android:textAlignment="center"
+            android:textColor="@color/color1"
+            android:textSize="24sp">
+
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/main_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_title"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/main_edtsearch"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/custombtn1"
+                android:hint="Search here.."
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp"
+                android:textColor="@color/color1"
+                android:textColorHint="@color/color2">
+
+            </EditText>
+
+            <com.rey.material.widget.Button
+                android:id="@+id/main_btnsearch"
+                style="@style/mybtn"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/custombtn2"
+                android:drawableTop="@drawable/ic_search"
+                android:paddingTop="4dp"
+                app:rd_style="@style/Material.Drawable.Ripple.Touch">
+
+            </com.rey.material.widget.Button>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_linear1"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/sflight"
+            android:text="Type file:"
+            android:textColor="@color/color1"
+            android:textSize="18sp">
+
+        </TextView>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/main_mp3"
+            style="@style/mycheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_type"
+            android:layout_marginStart="6dp"
+            android:fontFamily="@font/sflight"
+            android:gravity="center"
+            android:text=" .Mp3"
+            android:textColor="@color/color1"
+            android:textSize="14sp">
+
+        </com.rey.material.widget.CheckBox>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/main_mp4"
+            style="@style/mycheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_type"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/main_mp3"
+            android:fontFamily="@font/sflight"
+            android:gravity="center"
+            android:text=" .Mp4"
+            android:textColor="@color/color1"
+            android:textSize="14sp">
+
+        </com.rey.material.widget.CheckBox>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/main_mkv"
+            style="@style/mycheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_type"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/main_mp4"
+            android:fontFamily="@font/sflight"
+            android:gravity="center"
+            android:text=" .Mkv"
+            android:textColor="@color/color1"
+            android:textSize="14sp">
+
+        </com.rey.material.widget.CheckBox>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/main_apk"
+            style="@style/mycheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_type"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@id/main_mkv"
+            android:fontFamily="@font/sflight"
+            android:gravity="center"
+            android:text=" .Apk"
+            android:textColor="@color/color1"
+            android:textSize="14sp">
+
+        </com.rey.material.widget.CheckBox>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/main_jpg"
+            style="@style/mycheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_mp3"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/sflight"
+            android:gravity="center"
+            android:text=" .Jpg"
+            android:textColor="@color/color1"
+            android:textSize="14sp">
+
+        </com.rey.material.widget.CheckBox>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/main_png"
+            style="@style/mycheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_mp3"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/main_jpg"
+            android:fontFamily="@font/sflight"
+            android:gravity="center"
+            android:text=" .Png"
+            android:textColor="@color/color1"
+            android:textSize="14sp">
+
+        </com.rey.material.widget.CheckBox>
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/main_zip"
+            style="@style/mycheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_mp3"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/main_png"
+            android:fontFamily="@font/sflight"
+            android:gravity="center"
+            android:text=" .Zip"
+            android:textColor="@color/color1"
+            android:textSize="14sp">
+
+        </com.rey.material.widget.CheckBox>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_below="@+id/main_relative1"
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/main_resultfound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_frame"
+        android:layout_margin="6dp"
+        android:fontFamily="@font/sfbold"
+        android:text="0 Result found"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp">
+
+    </TextView>
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/main_loading"
+        style="@style/myloading"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_below="@id/main_resultfound">
+
+    </com.rey.material.widget.ProgressView>
+
+    <TextView
+        android:id="@+id/main_loadingdesk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_loading"
+        android:textAlignment="center"
+        android:fontFamily="@font/sflight"
+        android:textColor="@color/color4"
+        android:textSize="18sp">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/main_myimg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_loading"
+        android:layout_marginTop="64dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/directdownloadicon">
+
+    </ImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/main_resultfound">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

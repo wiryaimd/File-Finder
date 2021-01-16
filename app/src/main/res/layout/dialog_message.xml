@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/dialog_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:fontFamily="@font/sfbold"
+        android:text="Alert"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_alert"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/sfreguler"
+        android:text=""
+        android:textSize="20sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/dialog_btnok"
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/dialog_message"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="6dp"
+        android:background="@drawable/custombtn4"
+        android:text="Ok">
+
+    </Button>
+
+</RelativeLayout>

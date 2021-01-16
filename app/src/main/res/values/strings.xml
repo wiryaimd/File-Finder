@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Direct Download</string>
+    <string name="app_admobid">appid</string>
+    <string name="myad1">admobid</string>
+</resources>

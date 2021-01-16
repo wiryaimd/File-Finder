@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="mycheckbox">
+        <item name="cbd_strokeColor">@color/color1</item>
+        <item name="cbd_boxSize">18dp</item>
+        <item name="cbd_tickColor">@color/color3</item>
+    </style>
+    
+    <style name="mybtn">
+        <item name="rd_style">@style/Material.Drawable.Ripple.Touch</item>
+        <item name="rd_rippleType">touch</item>
+        <item name="rd_rippleColor">@color/color4</item>
+    </style>
+
+    <style name="myloading">
+        <item name="pv_circular">true</item>
+        <item name="pv_autostart">true</item>
+        <item name="pv_progressStyle">@style/Material.Drawable.CircularProgress</item>
+    </style>
+
+</resources>

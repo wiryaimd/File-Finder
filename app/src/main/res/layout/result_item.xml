@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/result_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfbold"
+                android:text=""
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/result_link"
+                android:layout_width="230dp"
+                android:layout_height="24dp"
+                android:layout_below="@id/result_title"
+                android:fontFamily="@font/sflight"
+                android:text=""
+                android:textColor="@color/color5"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/result_type"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@id/result_title"
+                android:layout_toEndOf="@id/result_link"
+                android:fontFamily="@font/sflight"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:textColor="@color/color3"
+                android:textSize="16sp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/result_download"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_download">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
